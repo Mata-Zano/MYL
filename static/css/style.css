@@ -1,0 +1,36 @@
+.container{
+    background-color: #F6F4F6;
+}
+.logo{
+    margin-top: 10px;
+    margin-right: 50px;
+    height:75px ;
+    width: 75px;
+}
+hr{
+    color: #86654B;
+    border: solid 2px;
+}
+.titulo{
+    margin-right: 50px;
+    font-family: 'Dm Sans';
+}
+.nav{
+    margin-top: 30px;
+    margin-right: 100px;
+    text-align: start;
+}
+.nav-link{
+    font-family: 'Open Sauce';           
+    color: #86654B;
+}
+.nav-link:active {
+    color:#86654B;
+  }
+  
+  .nav-link:hover {
+    color: #86654B;
+  }
+.copyright{
+    background-color: #86654B;
+}
