@@ -34,3 +34,16 @@ hr{
 .copyright{
     background-color: #86654B;
 }
+.email{
+    margin-left: 50px;
+}
+
+.inputMensaje{
+    width: 100%;
+}
+.btnContacto { 
+    background-color: #86654B;
+}
+.btnLogin{
+    background-color: black;
+}

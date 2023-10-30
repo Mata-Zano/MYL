@@ -17,6 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from principalApp.views import *
+from loginApp.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -24,4 +25,6 @@ urlpatterns = [
     path('catálogo/',Catalogo, name='Catalogo'),
     path('contacto/',Contacto, name='Contacto'),
     path('sobreNosotros/',Sobre, name='Sobre'),
+    path('ingreso/',Ingreso, name='login'),
+    path('ingreso/recuperar/',Recuperar, name='recuperar')
 ]
