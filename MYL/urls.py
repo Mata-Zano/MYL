@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.urls import path
 from principalApp.views import *
 from loginApp.views import *
+from administradorApp.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -26,5 +27,9 @@ urlpatterns = [
     path('contacto/',Contacto, name='Contacto'),
     path('sobreNosotros/',Sobre, name='Sobre'),
     path('ingreso/',Ingreso, name='login'),
-    path('ingreso/recuperar/',Recuperar, name='recuperar')
+    path('ingreso/recuperar/',Recuperar, name='recuperar'),
+    path('MYL/administrador/', indexAdministrador, name='administrador'),
+    path('MYL/administrador/gestionVentas/', gestionVentas, name='ventasAdm'),
+    path('MYL/administrador/gestionUsuarios/', gestionUsuarios, name='usuariosAdm'),
+    path('MYL/administrador/perfil/', perfilAdm, name='perfilAdm'),
 ]
