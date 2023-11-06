@@ -55,33 +55,33 @@
                 <p>Ingrese datos de cuenta</p>
             </div>
             <div class="row">
-                <section class="col-md-4 offset-md-4">
-                    <form action="" class="" method="POST">
-                        {{error}}
-                        </br>
-                        {% csrf_token %}
-                        <!-- Nombre usuario -->
-                        <div class="mb-3">
-                            <label for="username">Correo electrónico:</label><br>
-                            <input class="w-100" type="email" name="text" maxlength="150" id="username"placeholder="Escriba su E-mail" >              
-                        </div>
-                        <!-- Password 1 -->
-                        <div class="mb-3">
-                            <label for="password">Contraseña:</label><br>
-                            <input class="w-100" type="password" name="password" maxlength="150" id="password"placeholder="Escriba una contraseña" >              
-                        </div>
-                        <br>
-                        <div class="text-center">
-                            <button class="btn btn-primary btn-lg btnLogin" onclick="administrador()">
-                                Ingresar
-                            </button>
-                        </div>
+              <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form action="" class="align-items-start" method="POST">
+                      {% if messages %}
+                      <div class="messages">
+                          {% for message in messages %}
+                          <div{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</div>
+                          {% endfor %}
+                      {% endif %}
+                      {% csrf_token %}
+                        <div class="form-group">
+                        {{ form.correo.label_tag }} {{ form.correo }}
+                        {{ form.correo.errors }}
+                    </div>
+                    <div class="form-group">
+                        {{ form.password.label_tag }} {{ form.password}}
+                        {{ form.password.errors }}
+                    </div>
+                        <button type="submit" class="btn btn-primary">Ingresar</button>
                     </form>
+                    </div>
+                    </div>
                     <br>
                     <div  class="text-center">
                         <button class="btn btn-primary btn-lg btnLogin" onclick="recuperar()">Olvide contraseña</button>
                     </div>
-                </section> 
+
                 <button class="btn btn-primary btn-lg btnLogin" onclick="administrador()">
                   Ingresar
               </button>

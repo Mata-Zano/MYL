@@ -32,4 +32,8 @@ urlpatterns = [
     path('MYL/administrador/gestionVentas/', gestionVentas, name='ventasAdm'),
     path('MYL/administrador/gestionUsuarios/', gestionUsuarios, name='usuariosAdm'),
     path('MYL/administrador/perfil/', perfilAdm, name='perfilAdm'),
+
+    # Gestion de cuentas adm
+    path('MYL/administrador/gestionUsuarios/crearCuenta/', crearCuentaAdm, name='crearCuenta'),
+    path('MYL/administrador/gestionUsuarios/administrarCuenta/', administrarCuentaAdm, name='administrarCuenta'),
 ]

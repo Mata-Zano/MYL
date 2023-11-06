@@ -3,12 +3,19 @@
  
     font-family: 'Open Sauce' ;
 }
+/* Pag Administrado */
+.bienvenida{
+  margin-top: 100px;
+}
 /* Logo Ventas */
 .logoVenta{
   width: 300px;
   height: 400px;
 }
 
+.form-group{
+  margin: 20px;
+}
 /* ------------------------------------------------------- */
 .logo{
     width: 125px;
