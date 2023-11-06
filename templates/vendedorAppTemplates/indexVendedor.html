@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-{% extends 'administradorAppTemplates/nav.html' %}
+{% extends 'vendedorAppTemplates/navVendedor.html' %}
 
 {% load static %}
 
@@ -19,7 +19,7 @@
     />
     <title>Administrador</title>
   </head>
-  {% block content %}
+  {% block contentVendedor %}
   <link
   rel="stylesheet"
   href="{% static 'css/styleAdm.css' %}"
@@ -42,14 +42,20 @@
       </div>
       <div class="botones col">
         <div class="row">
-            <button type="button" class="buttonAdm" id="ventasAdm" onclick="ventasAdm()"><img src="{% static 'img/ventas.png' %}" alt="" class="ventasImg"> Ventas y Productos</button>
+            <button type="button" class="buttonAdm" id="ventasAdm" ><img src="{% static 'img/libro.png' %}" alt="" class="ventasImg"> Catálogo</button>
         </div>
         <div class="row">
-            <button type="button" class="buttonAdm" id="usariosAdm" onclick="usuariosAdm()"><img src="{% static 'img/usuarios.png' %}" alt="" class="ventasImg"> Gestion de Usuarios</button>
+            <button type="button" class="buttonAdm" id="usariosAdm" ><img src="{% static 'img/carrito.png' %}" alt="" class="ventasImg"> Carrito</button>
         </div>
         <div class="row">
-            <button type="button" class="buttonAdm" id="perfiladm" onclick="perfilAdm()"><img src="{% static 'img/perfil.png' %}" alt="" class="ventasImg"> Perfil</button>
-        </div>
+          <button type="button" class="buttonAdm" id="usariosAdm" ><img src="{% static 'img/listadoV.png' %}" alt="" class="ventasImg"> Gestión de Pedidos</button>
+      </div>
+      <div class="row">
+        <button type="button" class="buttonAdm" id="perfiladm" ><img src="{% static 'img/perfil.png' %}" alt="" class="ventasImg"> Perfil</button>
+    </div>
+      </div>
+      
+        
       </div>
     </div>
   </body>
