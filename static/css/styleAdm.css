@@ -7,6 +7,13 @@
 .bienvenida{
   margin-top: 100px;
 }
+.ventas{
+  margin-top: 50px;
+}
+.usuarios{
+  margin-top: 15px;
+}
+/* ---------------------------- */
 /* Logo Ventas */
 .logoVenta{
   width: 300px;

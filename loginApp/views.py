@@ -14,7 +14,14 @@ def Ingreso(request):
            try:
                cuenta = Cuenta.objects.get(correo = correo)
                if password == cuenta.password:
-                  return redirect('administrador')
+                  if cuenta.rol.id == 1:
+                      return redirect('administrador')
+                  elif cuenta.rol.id == 2:
+                      return redirect('cliente')
+                  elif cuenta.rol.id == 3:
+                      return redirect('vendedor')
+                  else:
+                      return redirect('login')
                else:
                   messages.error(request, 'Los datos no son validos')
            except Cuenta.DoesNotExist:

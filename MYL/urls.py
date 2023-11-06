@@ -19,6 +19,8 @@ from django.urls import path
 from principalApp.views import *
 from loginApp.views import *
 from administradorApp.views import *
+from vendedorApp.views import *
+from clienteApp.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -36,4 +38,9 @@ urlpatterns = [
     # Gestion de cuentas adm
     path('MYL/administrador/gestionUsuarios/crearCuenta/', crearCuentaAdm, name='crearCuenta'),
     path('MYL/administrador/gestionUsuarios/administrarCuenta/', administrarCuentaAdm, name='administrarCuenta'),
+
+    # VENDEDOR
+    path('MYL/vendedor/', indexVendedor, name='vendedor'),
+    #CLIENTE
+    path('MYL/cliente/', indexCliente, name='cliente'),
 ]
